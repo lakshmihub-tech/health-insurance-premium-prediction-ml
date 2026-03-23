@@ -8,6 +8,12 @@ It helps insurance companies estimate premium charges and assists users in under
 
 ---
 
+## 💡 Business Use Case
+
+This project can help insurance companies automate premium calculation and assist customers in estimating their insurance costs quickly and accurately.
+
+---
+
 ## 🎯 Problem Statement
 
 Calculating insurance premiums manually is complex and time-consuming. This project automates the process by building a predictive model based on historical data.
@@ -44,7 +50,7 @@ Calculating insurance premiums manually is complex and time-consuming. This proj
 * NumPy
 * Scikit-learn
 * Matplotlib / Seaborn
-* Flask (for web app interface)
+* Streamlit (for web app interface)
 
 ---
 
@@ -79,6 +85,16 @@ Calculating insurance premiums manually is complex and time-consuming. This proj
 
 ---
 
+## 📈 Model Performance
+
+* Linear Regression R² Score: 0.72
+* Decision Tree R² Score: 0.80
+* Random Forest R² Score: 0.87
+
+👉 Random Forest achieved the best performance among all models.
+
+---
+
 ## 📸 Output Screenshots
 
 ### 🔹 Home Page (User Input Form)
@@ -95,30 +111,34 @@ Calculating insurance premiums manually is complex and time-consuming. This proj
 
 ### Step 1: Clone the Repository
 
+```bash
 git clone https://github.com/lakshmihub-tech/health-insurance-premium-prediction-ml
+```
 
 ### Step 2: Navigate to Project Folder
 
+```bash
 cd health-insurance-premium-prediction-ml
+```
 
 ### Step 3: Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ### Step 4: Run the Application
 
-python app.py
-
-### Step 5: Open in Browser
-
-http://127.0.0.1:5000
+```bash
+streamlit run main.py
+```
 
 ---
 
 ## 📁 Project Structure
 
 health-insurance-premium-prediction-ml/
-│── app.py
+│── main.py
 │── model.py
 │── requirements.txt
 │── home.png
@@ -131,15 +151,16 @@ health-insurance-premium-prediction-ml/
 
 * Successfully predicted insurance premiums based on user input
 * Smoking status and BMI have a significant impact on premium
+* Random Forest model performed best due to its ability to handle non-linear relationships
 * Model provides accurate and quick predictions
 
 ---
 
 ## 🚀 Future Improvements
 
-* Deploy the application online (Render / Heroku)
 * Improve accuracy using advanced models (XGBoost)
 * Add user authentication system
+* Enhance UI/UX
 
 ---
 
@@ -152,5 +173,6 @@ This project demonstrates how Machine Learning can be applied to real-world prob
 ## 👩‍💻 Author
 
 **Pagadala Venkata Lakshmi**
+
 
 ---
